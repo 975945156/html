@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><!--定义了整个 HTML 文档-->
+<head>
+    <meta charset="utf-8">
+    <title>Java学习</title>
+    <style class="center">         <!--  内部样式表-- >
+    a {
+        text-decoration: none
+    }
+
+    address.center {
+        text-align: center;
+    }
+
+    .box > div {
+        background-color: lightgrey;
+        width: 500px;
+        border: 35px solid green;
+        padding: 35px;
+        margin: 25px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    h2 {
+        color: yellow;
+    }
+
+    h3 {
+        color: darkmagenta;
+    }
+
+    h4 {
+        color: cadetblue;
+    }
+
+    h5 {
+        color: tomato;
+    }
+
+    h6 {
+        color: saddlebrown;
+    }
+
+    p {
+        color: blue;
+    }
+
+    pre {
+        color: brown
+    }
+
+    address {
+        color: #eeeeff;
+    }
+
+    body {
+        background: silver url("image.jpg") no-repeat right bottom fixed;
+    }
+
+    img.bottom {
+        vertical-align: text-bottom
+    }
+
+    img.top {
+        vertical-align: text-top;
+    }
+    </style>
+</head>
+
+<body><!--定义了 HTML 文档的主体-->
+<span style="cursor:wait">
+<div id="header" style="background-color: #99cc99">
+    <h1 class="center">html学习<img class="top" src=1.jpg width="45" height="45" border="1"></h1>
+</div>
+<div id="menu" style="background-color: darkcyan;height: 1700px;width: 160px;float: left;">
+    <b>学习内容</b><br>
+    HTML<br>
+    CSS<br>
+    JavaScript
+</div>
+<div id="content" style="background-color:#EEEEEE;height:1700px;width:800px;float:left;">
+
+    <h1>标题1</h1><!--标题-->
+    <font size="6">这是6号字体文本</font>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+    <hr/>
+    <h3>盒子模型演示</h3>
+    <p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
+    <div class="box"><div>这里是盒子内的实际内容。有 35px 内间距，25px 外间距、35px 绿色边框。
+    </div></div>
+    <hr/>
+    <h4>无边框表格</h4>
+    <table>
+        <tr>
+            <td>这</td>
+            <td>是</td>
+            <td>一</td>
+        </tr>
+        <tr>
+            <td>个</td>
+            <td>表</td>
+            <td>格</td>
+        </tr>
+    </table>
+    <h4>有边框，边距，间距表格</h4>
+    <table border="1"
+           cellpadding="10"
+           cellspacing="10">
+        <caption>Microsoft Boss</caption>
+        <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+            <th>Adress</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>12334567890</td>
+            <td>USA</td>
+        </tr>
+    </table>
+
+    <hr><!--在 HTML 页面中创建水平线-->
+
+    <h4>无序嵌套列表：</h4>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Green Tea</li>
+                <li>Black Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+        <li>Water</li>
+    </ul>
+    <h4>有序列表</h4>
+    <ol start="100">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Water</li>
+    </ol>
+    <hr/>
+
+    <p>段落文字从左到右</p><!--段落-->
+    <p><bdo dir="rtl">段落文字从右到左</bdo></p>
+    <p><bdo dir="auto">auto是啥意思呢</bdo></p>
+    <hr>
+    <pre>
+此例演示如何使用 pre 标签
+对空行和    空格
+进行控制
+</pre>
+    <hr/>
+    <b>加粗字体</b>
+    <br/>
+    <strong>加粗字体</strong>
+    <br/>
+    <big>字体放大</big>
+    <em>斜体</em>
+    <br/>
+    <i>斜体</i>
+    <br/>
+    <small>字体缩小</small>
+    <br/>
+    <code>电脑自动输出</code>
+    <br>
+    这是<sub>下标</sub>和<sup>上标</sup>
+    <br/>
+    <p>链接到：<a href=http://47.101.167.168/change.html>改变</a></p><!--链接-->
+    <hr/>
+</div>
+<address class="center">Written by <a href="http://47.101.167.168/change.html" target="_blank">改变</a>.<br>
+    Visit us at:<br>
+    flyfrog.top<br>
+    Penglai Road 8,
+    <del>HuaiNan</del>
+    <ins>HeFei</ins>
+    !
+    CHN
+</address>
+<br/><!--换行-->
+<img src="2.jpg" border="2" width=127 height=140><!--图片-->
+
+<div id="footer" style="background-color:transparent;clear:both;text-align:center;">
+    Copyright©2019 flyfrog.top 皖ICP备19014500号
+    ​
+</div>
+<br>
+    </span>
+
+</body>
+</html>

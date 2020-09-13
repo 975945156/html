@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <script src="jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>开关灯实现</title>
+    <style class="center"></style>
+
+    <script>
+        $(document).ready(function () {
+            $("#p1").hover(function () {
+                    alert("你瞅谁？");
+                },
+                function () {
+                    alert("瞅你咋滴！");
+                }
+            )
+        });
+    </script>
+</head>
+<body>
+
+<div style="text-align: center">
+    <script>
+        function changeImage() {
+            element = document.getElementById('myimage')
+            if (element.src.match("bulbon")) {
+                element.src = "pic_bulboff.gif";
+            }
+            else {
+                element.src = "pic_bulbon.gif";
+            }
+        }
+
+    </script>
+    <img id="myimage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p id="demo"></p>
+    <script>
+        var x;
+        var d2 = new Date().getDay();
+        switch (d2) {
+            case 6:
+                x = "今天是星期六";
+                break;
+            case 0:
+                x = "今天是星期日";
+                break;
+            default:
+                x = "期待周末";
+        }
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+    <script>
+        var d1 = new Date();
+        var time = d1.getHours();
+        if (time < 11) {
+            document.write("<b>早上好！</b>");
+        }
+        else if (time >= 11 && time < 14) {
+            document.write("<b>中午好！</b>");
+        }
+        else if (time >= 14 && time < 18) {
+            document.write("<b>下午好！</b>");
+        }
+        else {
+            document.write("<b>晚上好!</b>");
+        }
+    </script>
+    <p>点击灯泡就可以打开或关闭这盏灯</p>
+    <button onclick="this.innerHTML=Date()">现在的时间是？</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p id="p1">点这！点这！</p>
+
+</div>
+</body>
+</html>
